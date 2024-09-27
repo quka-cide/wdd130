@@ -27,6 +27,7 @@ p {
 
 main {
     min-width: 840px;
+    max-width: 1500px;
 }
 
 aside {
