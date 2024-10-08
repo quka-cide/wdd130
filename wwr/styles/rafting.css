@@ -13,17 +13,35 @@ body {
 }
 
 h2 {
-    color: var(--accent1-color);
-}
-
-p {
-    font-weight: 900;
+    color: var(--secondary-color);
+    font-size: 2rem;
 }
 
 a {
     text-decoration: none;
     color: black;
     font-weight: bold;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.logo img {
+    margin: 20px;
+    width: 120px;
+    height: auto;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+}
+
+header ul li {
+    flex: 1 1 100%;
 }
 
 .hero {
@@ -36,7 +54,7 @@ a {
 .hero-img {
     display: block;
     width: 100%;
-    height: auto;
+    height: 100vh;
 }
 
 .hero h1 {
@@ -57,12 +75,12 @@ article {
     position: absolute;
     top: 500px;
     left: 15%;
-    color: #eee;
+    color: black;
     width: 75%;
     height: auto;
     background-color: rgba(33, 158, 188, 0.7);
     padding: 25px;
-    font-size: 20px;
+    font-size: 24px;
 }
 
 .happy-client {
@@ -77,9 +95,73 @@ section img {
     margin: 20px;
 }
 
-.sociallinks a img {
+#history h2 {
+    text-align: center;
+}
+
+#history .content {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr; 
+    gap: 20px; 
+    padding: 20px;
+    place-items: center;
+}
+
+#history .content p {
+    font-size: 24px;
+    padding: 20px;
+    font-weight: 400;
+    color: var(--secondary-color);
+}
+
+#history .content img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+#adventure h2 {
+    text-align: center;
+}
+
+#adventure .grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+#adventure figure {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#adventure figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+#adventure figure figcaption {
+    font-family: 'lato', sans-serif;
+    font-size: 18px;
+    color: var(--secondary-color);
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+footer a img{
     width: 32px;
     height: 32px;
 }
-
-
