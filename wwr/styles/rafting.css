@@ -12,15 +12,28 @@ body {
     box-sizing: border-box;
 }
 
+h1 {
+    text-align: center;
+}
+
 h2 {
     color: var(--secondary-color);
     font-size: 2rem;
+    text-align: center;
 }
 
 a {
     text-decoration: none;
     color: black;
     font-weight: bold;
+}
+
+span {
+    font-weight: 700;
+}
+
+img {
+    border-radius: 5px;
 }
 
 header {
@@ -117,7 +130,6 @@ section img {
 #history .content img {
     width: 100%;
     height: auto;
-    border-radius: 5px;
 }
 
 #adventure h2 {
@@ -138,7 +150,6 @@ section img {
 #adventure figure img {
     width: 100%;
     height: auto;
-    border-radius: 5px;
 }
 
 #adventure figure figcaption {
@@ -147,12 +158,108 @@ section img {
     color: var(--secondary-color);
 }
 
+.info {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px;
+}
+
+.column2 {
+    display: flex;
+    flex-direction: column;
+
+}
+
+form {
+    margin: 0 auto;
+    width: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+
+fieldset {
+    border: none;
+}
+
+legend {
+    text-align: center;
+    font-weight: 700;
+    padding: 20px;
+    font-size: 1.2rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+label input[type="radio"] {
+    margin-right: 10px;
+}
+
+label.radio-label,
+label.checkbox-label {
+    display: flex;
+    align-items: center;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 8px;
+}
+
+input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    vertical-align: bottom;
+}
+
+textarea {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    padding: 10px;
+}
+
+div {
+    margin-bottom: 10px;
+}
+
+button {
+    display: block;
+    padding: 10px 40px;
+    border-radius: 5px;
+    margin-top: 10px;
+    border-color: var(--accent1-color);
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
 footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
     padding: 20px;
+}
+
+footer .items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+footer p {
+    margin-right: 10px;
 }
 
 footer ul {
